@@ -4,7 +4,6 @@ import memory_agents as m
 
 # Contains the DSPy agents
 
-OPENAI_API_KEY="sk-proj-fDLomuJS5bENFn5aSPI2T3BlbkFJJnZXktSMK0ZhQbxPIau1"
 
 class analytical_planner(dspy.Signature):
     # The planner agent which routes the query to Agent(s)
