@@ -20,10 +20,13 @@ import plotly as px
 import matplotlib.pyplot as plt
 
 # Add API key input field
-#openai_api_key = st.sidebar.text_input("Enter your OpenAI API key:", type="password")
-#if not openai_api_key:
-#   st.warning("Please enter your OpenAI API key to continue.")
-#   st.stop()
+openai_api_key = st.sidebar.text_input("Enter your OpenAI API key:", type="password")
+if not openai_api_key:
+    st.warning("Please enter your OpenAI API key to continue.")
+    st.stop()
+
+# Use the API key throughout the script
+os.environ["OPENAI_API_KEY"] = openai_api_key
 
 def reset_everything():
     st.cache_data.clear()
