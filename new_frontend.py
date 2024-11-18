@@ -69,12 +69,12 @@ dspy.configure(lm = dspy.OpenAI(model='gpt-4o-mini',api_key=os.environ['OPENAI_A
 Settings.embed_model = OpenAIEmbedding(api_key=os.environ["OPENAI_API_KEY"])
 
 # Imports images
-st.image('./images/Auto-analysts icon small.png', width=70)
+#st.image('./images/Auto-analysts icon small.png', width=70)
 st.title("Auto-Analyst")
     
 
 # asthetic features for streamlit app
-st.logo('./images/Auto-analysts icon small.png')
+#st.logo('./images/Auto-analysts icon small.png')
 st.sidebar.title(":white[Auto-Analyst] ")
 st.sidebar.text("Have all your Data Science ")
 st.sidebar.text("Analysis Done!")
