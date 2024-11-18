@@ -61,7 +61,7 @@ agent_names= [insights_agent,sk_learn_agent,statistical_analytics_agent,preproce
 
 # Configure the LLM to be ChatGPT-4o-mini
 # You can change this to use your particular choice of LLM
-dspy.configure(lm = dspy.OpenAI(model='gpt-4o-mini',api_key=os.environ['OPENAI_API_KEY'], max_tokens=16384))
+dspy.configure(lm = dspy.OpenAI(model='gpt-4o-mini',api_key=OPENAI_API_KEY, max_tokens=16384))
 
 # dspy.configure(lm =dspy.GROQ(model='llama3-70b-8192', api_key =os.environ.get("GROQ_API_KEY"),max_tokens=10000 ) )
 
