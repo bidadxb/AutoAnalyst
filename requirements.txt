@@ -12,3 +12,5 @@ tabulate==0.9.0
 matplotlib==3.9.1
 dspy
 sklearn
+setuptools
+wheel
